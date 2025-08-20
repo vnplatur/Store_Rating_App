@@ -1,0 +1,133 @@
+.container {
+  background: #fafafa;
+  min-height: 100vh;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 12px 24px;
+  border-bottom: 1px solid #ddd;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1976d2;
+}
+
+.navButtons button {
+  margin-left: 12px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #424242;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.heroButtons {
+  margin-top: 20px;
+}
+
+.primaryButton {
+  padding: 10px 20px;
+  background: #1976d2;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.primaryButton:hover {
+  background: #125aa0;
+}
+
+.outlineButton {
+  padding: 10px 20px;
+  border: 2px solid #1976d2;
+  background: white;
+  color: #1976d2;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.outlineButton:hover {
+  background: #f0f8ff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 20px;
+  /* text-align: center; */
+  transition: box-shadow 0.3s ease;
+  overflow: hidden;            /* ✅ keep content inside */
+  word-wrap: break-word;       /* ✅ force break long words */
+  overflow-wrap: break-word;   /* ✅ modern word breaking */
+}
+
+.card h2{
+text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.iconCircle {
+  width: 48px;
+  height: 48px;
+  background: #e3f2fd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  color: #1976d2;
+}
+
+.cardTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #424242;
+}
+
+.cardText {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;          /* ✅ prevent uneven text */
+  margin: 0 auto;
+  max-width: 90%;             /* ✅ keep text inside */
+
+}

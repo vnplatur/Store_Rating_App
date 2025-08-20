@@ -1,0 +1,23 @@
+{
+  "name": "store_rating_app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "start": "npm run build && cd backend && node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ 
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vnplatur/Store_Rating_App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vnplatur/Store_Rating_App/issues"
+  },
+  "homepage": "https://github.com/vnplatur/Store_Rating_App#readme",
+  "description": ""
+}

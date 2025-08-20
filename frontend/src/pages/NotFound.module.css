@@ -1,0 +1,40 @@
+.container {
+  min-height: 100vh;
+  background: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  text-align: center;
+}
+
+.code {
+  font-size: 64px;
+  font-weight: bold;
+  color: #424242;
+}
+
+.message {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.button {
+  padding: 10px 20px;
+  background: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #125aa0;
+}
