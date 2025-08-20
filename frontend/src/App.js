@@ -21,7 +21,7 @@ export default function App() {
     <div className={`App`}>
       {/* Add context provider here */}
       <Navbar />
-      {/* <nav style={{ padding: "10px", background: "#f0f0f0" }}>
+      <nav style={{ padding: "10px", background: "#f0f0f0" }}>
         
         <Link href="/">Home</Link> |{" "}
         <Link href="/landing">Landing</Link> |{" "}
@@ -31,7 +31,7 @@ export default function App() {
         <Link href="/users">Users</Link> |{" "}
         <Link href="/register">Register</Link> |{" "}
         <Link href="/update-password">Update Password</Link>
-      </nav> */}
+      </nav>
       <Switch>
         <Route path="/" component={Home} />
         <Route path="/landing" component={Landing} />

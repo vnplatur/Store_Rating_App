@@ -1,11 +1,15 @@
 import db from "../config/db.js";
 
-export const getUsers = (callback) => {
-  const query = "SELECT * FROM users";
-  db.query(query, (err, results) => {
-    if (err) {
-      return callback(err, null);
-    }
-    callback(null, results);
-  });
+// find user by email
+export const findUserByEmail = (email, callback) => {
+  db.query("SELECT * FROM users WHERE email = ?", [email], callback);
+};
+
+// create new user
+export const createUser = (name, email, password, callback) => {
+  db.query(
+    "INSERT INTO users (name, email, password) VALUES (?, ?, ?)",
+    [name, email, password],
+    callback
+  );
 };

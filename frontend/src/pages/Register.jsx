@@ -28,7 +28,8 @@ export default function Register() {
         });
         setMessage("Login successful!");
       }
-    } catch {
+    } catch(error) {
+      console.log(error.message);
       setMessage(mode === "register" ?"Failed to register.":"Failed to Login.");
     }
   };

@@ -18,7 +18,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.use("/api", userRoutes);
-console.log("DATABASE_URL", process.env.DATABASE_URL);
+console.log("DATABASE_URL", process.env.DB_NAME);
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
